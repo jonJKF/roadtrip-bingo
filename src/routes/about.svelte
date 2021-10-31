@@ -1,3 +1,4 @@
+<svelte:head>About - Road Trip Bingo!</svelte:head>
 <h1>About</h1>
 <p>This project is a last-minute submission to Cloudflare's 2021 Summer Developer Challenge!</p>
 <p>It is based on an idea my sister and I had many years ago for entertaining kids in a car or on a train
