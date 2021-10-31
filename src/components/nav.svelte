@@ -1,48 +1,12 @@
-<nav class="shadow bg-gray-800">
-	<div
-		class="
-        container
-        px-6
-        py-3
-        mx-auto
-        md:flex md:justify-between md:items-center
-      "
-	>
-		<div class="flex items-center justify-between">
-			<div>
-				<a
-					class="
-                        text-xl
-                        font-bold
-                        text-white
-                        md:text-2xl
-                        hover:text-yellow-500"
-					href="/">Road Trip Bingo!</a
-				>
-			</div>
-		</div>
-
-		<div class="items-center md:flex">
-			<div class="flex flex-col md:flex-row md:mx-6">
-				<a
-					class="
-              my-1
-              text-gray-200
-              hover:text-yellow-500
-              md:mx-4 md:my-0
-            "
-					href="/">Play Bingo!</a
-				>
-				<a
-					class="
-              my-1
-              text-gray-200
-              hover:text-yellow-500
-              md:mx-4 md:my-0
-            "
-					href="/about">About</a
-				>
-			</div>
+<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+	<div class="flex-none px-2 mx-2">
+		<a href="/" class="text-lg font-bold">Road Trip Bingo!</a>
+	</div>
+	<div class="flex-1 px-2 mx-2">
+		<div class="items-stretch hidden lg:flex">
+			<a href="/" class="btn btn-ghost btn-sm rounded-btn">Play Bingo!</a>
+			<a href="/about" class="btn btn-ghost btn-sm rounded-btn">About</a>
+            <a href="https://github.com/jonJKF/roadtrip-bingo" target="_blank" class="btn btn-ghost btn-sm rounded-btn">Source</a>
 		</div>
 	</div>
-</nav>
+</div>
