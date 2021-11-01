@@ -20,7 +20,7 @@ import { collectables } from "../stores/collectables";
             border
             {task.completed ? 'bg-primary-focus' : 'bg-secondary-focus'}"
             on:click="{() => task.completed = !task.completed}"         
-            >Task: {task.description}</div>
+            >{task.description}</div>
         {:else}
         <div class="btn btn-xl btn-outline btn-primary loading">loading...</div> 
         {/each}
