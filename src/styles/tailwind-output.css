@@ -965,6 +965,36 @@ html {
 .prose > :last-child {
 	margin-bottom: 0;
 }
+.alert>:not([hidden])~:not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(0.5rem*(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(0.5rem*var(--tw-space-y-reverse));
+}
+.alert {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--b2)/var(--tw-bg-opacity,1));
+	padding: 1rem;
+	border-radius: var(--rounded-box,1rem);
+}
+@media (min-width:768px) {
+
+	.alert>:not([hidden])~:not([hidden]) {
+		--tw-space-y-reverse: 0;
+		margin-top: calc(0px*(1 - var(--tw-space-y-reverse)));
+		margin-bottom: calc(0px*var(--tw-space-y-reverse));
+	}
+
+	.alert {
+		flex-direction: row;
+	}
+}
+.alert>* {
+	display: flex;
+}
 .btn {
 	border-color: transparent;
 	border-color: hsla(var(--n)/var(--tw-border-opacity,1));
@@ -1065,6 +1095,62 @@ html {
 }
 .btn-group>input[type=radio].btn:before {
 	content: attr(data-title);
+}
+.label {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	padding: .5rem .25rem;
+}
+.modal {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	opacity: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+	z-index: 999;
+	--tw-bg-opacity: 1;
+	--tw-bg-opacity: 0.4;
+	background-color: hsla(var(--nf)/var(--tw-bg-opacity,1));
+	transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+	transition-duration: .15s;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+@media (min-width:640px) {
+
+	.modal {
+		align-items: center;
+	}
+
+	.modal-box {
+		max-width: 32rem;
+		--tw-scale-x: .9;
+		--tw-scale-y: .9;
+		--tw-translate-y: 0px;
+		border-bottom-left-radius: var(--rounded-box,1rem);
+		border-bottom-right-radius: var(--rounded-box,1rem);
+	}
+}
+.modal-open,.modal-toggle:checked+.modal,.modal:target {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
+.modal-action {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
 }
 .navbar {
 	display: flex;
@@ -1452,6 +1538,42 @@ html {
 .drawer-toggle:focus-visible~.drawer-content .drawer-button.btn-ghost {
 	box-shadow: 0 0 0 2px currentColor;
 }
+.label a:hover {
+	--tw-text-opacity: 1;
+	color: hsla(var(--bc)/var(--tw-text-opacity,1));
+}
+.modal-box {
+	--tw-bg-opacity: 1;
+	background-color: hsla(var(--b1)/var(--tw-bg-opacity,1));
+	padding: 1.5rem;
+	width: 100%;
+	--tw-translate-x: 0;
+	--tw-translate-y: 0;
+	--tw-translate-y: 2.5rem;
+	--tw-rotate: 0;
+	--tw-skew-x: 0;
+	--tw-skew-y: 0;
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	transition-property: background-color,border-color,color,fill,stroke,opacity,box-shadow,transform;
+	transition-duration: .15s;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	border-top-left-radius: var(--rounded-box,1rem);
+	border-top-right-radius: var(--rounded-box,1rem);
+	box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
+}
+.modal-open .modal-box,.modal-toggle:checked+.modal .modal-box,.modal:target .modal-box {
+	--tw-scale-x: 1;
+	--tw-scale-y: 1;
+	--tw-translate-y: 0px;
+}
+.modal-action>:not([hidden])~:not([hidden]) {
+	--tw-space-x-reverse: 0;
+	margin-right: calc(0.5rem*var(--tw-space-x-reverse));
+	margin-left: calc(0.5rem*(1 - var(--tw-space-x-reverse)));
+}
 @-webkit-keyframes radiomark {
 
 	0% {
@@ -1626,6 +1748,10 @@ html {
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 }
+.py-5 {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+}
 .text-center {
 	text-align: center;
 }
@@ -1639,6 +1765,14 @@ html {
 .text-lg {
 	font-size: 1.125rem;
 	line-height: 1.75rem;
+}
+.text-xl {
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 .font-bold {
 	font-weight: 700;
