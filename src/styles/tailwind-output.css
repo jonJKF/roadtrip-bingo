@@ -965,36 +965,6 @@ html {
 .prose > :last-child {
 	margin-bottom: 0;
 }
-.alert>:not([hidden])~:not([hidden]) {
-	--tw-space-y-reverse: 0;
-	margin-top: calc(0.5rem*(1 - var(--tw-space-y-reverse)));
-	margin-bottom: calc(0.5rem*var(--tw-space-y-reverse));
-}
-.alert {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	--tw-bg-opacity: 1;
-	background-color: hsla(var(--b2)/var(--tw-bg-opacity,1));
-	padding: 1rem;
-	border-radius: var(--rounded-box,1rem);
-}
-@media (min-width:768px) {
-
-	.alert>:not([hidden])~:not([hidden]) {
-		--tw-space-y-reverse: 0;
-		margin-top: calc(0px*(1 - var(--tw-space-y-reverse)));
-		margin-bottom: calc(0px*var(--tw-space-y-reverse));
-	}
-
-	.alert {
-		flex-direction: row;
-	}
-}
-.alert>* {
-	display: flex;
-}
 .btn {
 	border-color: transparent;
 	border-color: hsla(var(--n)/var(--tw-border-opacity,1));
@@ -1744,13 +1714,13 @@ html {
 .p-10 {
 	padding: 2.5rem;
 }
-.px-2 {
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-}
 .py-5 {
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
+}
+.px-2 {
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 .text-center {
 	text-align: center;
@@ -1762,17 +1732,13 @@ html {
 	font-size: 3rem;
 	line-height: 1;
 }
-.text-lg {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
-}
-.text-xl {
-	font-size: 1.25rem;
-	line-height: 1.75rem;
-}
 .text-2xl {
 	font-size: 1.5rem;
 	line-height: 2rem;
+}
+.text-lg {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 }
 .font-bold {
 	font-weight: 700;

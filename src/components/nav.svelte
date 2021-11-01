@@ -6,7 +6,11 @@
 		<div class="items-stretch hidden lg:flex">
 			<a href="/" class="btn btn-ghost btn-sm rounded-btn">Play Bingo!</a>
 			<a href="/about" class="btn btn-ghost btn-sm rounded-btn">About</a>
-            <a href="https://github.com/jonJKF/roadtrip-bingo" target="_blank" class="btn btn-ghost btn-sm rounded-btn">Source</a>
+			<a
+				href="https://github.com/jonJKF/roadtrip-bingo"
+				target="_blank"
+				class="btn btn-ghost btn-sm rounded-btn">Source</a
+			>
 		</div>
 	</div>
 </div>

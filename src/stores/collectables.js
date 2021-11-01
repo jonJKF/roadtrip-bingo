@@ -9,7 +9,7 @@ const fetchCollectables = async () => {
 		const data = await response.json();
 		const mapped = data.collectables.map((item, index) => {
 			return {
-        index: index,
+				index: index,
 				id: item.id,
 				description: item.description,
 				completed: false
@@ -20,4 +20,4 @@ const fetchCollectables = async () => {
 		console.log(e);
 	}
 };
-fetchCollectables()
+fetchCollectables();

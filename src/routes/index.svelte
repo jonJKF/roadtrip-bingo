@@ -1,6 +1,7 @@
-<svelte:head><title>Play Road Trip Bingo!</title></svelte:head>
 <script>
-import GameBoard from "../components/game-board.svelte"
+	import GameBoard from '../components/game-board.svelte';
 </script>
+
+<svelte:head><title>Play Road Trip Bingo!</title></svelte:head>
 
 <GameBoard />
