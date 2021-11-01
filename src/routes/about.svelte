@@ -1,5 +1,5 @@
 <svelte:head><title>About - Road Trip Bingo!</title></svelte:head>
-<article class="prose lg:prose-xl">
+<article class="prose lg:prose-xl m-10 p-10">
     <h1>About</h1>
     <p>This project is a last-minute submission to Cloudflare's 2021 Summer Developer Challenge!</p>
     <p>It is based on an idea my sister and I had many years ago for entertaining kids in a car or on a train
