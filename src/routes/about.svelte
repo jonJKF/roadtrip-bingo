@@ -10,7 +10,7 @@
     <ul>
         <li><a href="https://pages.cloudflare.com/">Cloudflare Pages</a> to host this site.</li>
         <li><a href="https://workers.cloudflare.com/">Cloudflare Workers</a> for the super-fast API to load the game data</li>
-        <li><del><a href="https://www.cloudflare.com/products/workers-kv/">Cloudflare Workers KV</a> to store all the "collectable" options to go on the board</del></li>
+        <li><a href="https://www.cloudflare.com/products/workers-kv/">Cloudflare Workers KV</a> to store all the "collectable" options to go on the board</li>
         <li><del><a href="https://developers.cloudflare.com/workers/runtime-apis/durable-objects">Durable Objects</a> for the game sessions</del></li>
     </ul>
     <p>Source code is hosted on github:</p>
