@@ -5,7 +5,7 @@ import { collectables } from "../stores/collectables";
 <div class="container mx-auto w-auto" style="width: 662px;">
     <h1 class="my-10 text-5xl text-primary bold text-center drop-shadow-lg">Road Trip Bingo - Have Fun!</h1>
     <div class="grid grid-cols-5 grid-rows-5 gap-1">
-        {#each $collectables as task (task.guid)}
+        {#each $collectables as task (task.id)}
             <div
             class="
             text-center
