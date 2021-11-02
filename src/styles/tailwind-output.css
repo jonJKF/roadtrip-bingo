@@ -1017,6 +1017,11 @@ html {
 	--tw-text-opacity: 0.2;
 	color: hsla(var(--bc)/var(--tw-text-opacity,1));
 }
+.btn-square {
+	height: 3rem;
+	padding: 0;
+	width: 3rem;
+}
 .btn.loading,.btn.loading:hover {
 	pointer-events: none;
 }
@@ -1131,6 +1136,17 @@ html {
 .navbar>* {
 	display: flex;
 	align-items: center;
+}
+.navbar-start {
+	width: 50%;
+	justify-content: flex-start;
+}
+.navbar-center {
+	flex-shrink: 0;
+}
+.navbar-end {
+	width: 50%;
+	justify-content: flex-end;
 }
 .btn .badge {
 	--tw-bg-opacity: 1;
@@ -1628,10 +1644,25 @@ html {
 	min-height: 2rem;
 	font-size: .875rem;
 }
+.btn-square.btn-xs {
+	height: 1.5rem;
+	padding: 0;
+	width: 1.5rem;
+}
 .btn-square.btn-sm {
 	height: 2rem;
 	padding: 0;
 	width: 2rem;
+}
+.btn-square.btn-md {
+	height: 3rem;
+	padding: 0;
+	width: 3rem;
+}
+.btn-square.btn-lg {
+	height: 4rem;
+	padding: 0;
+	width: 4rem;
 }
 .btn-circle.btn-sm {
 	border-radius: 9999px;
@@ -1669,6 +1700,12 @@ html {
 .mb-2 {
 	margin-bottom: 0.5rem;
 }
+.box-content {
+	box-sizing: content-box;
+}
+.inline-block {
+	display: inline-block;
+}
 .flex {
 	display: flex;
 }
@@ -1681,11 +1718,23 @@ html {
 .h-32 {
 	height: 8rem;
 }
+.h-16 {
+	height: 4rem;
+}
+.h-6 {
+	height: 1.5rem;
+}
 .w-auto {
 	width: auto;
 }
 .w-32 {
 	width: 8rem;
+}
+.w-16 {
+	width: 4rem;
+}
+.w-6 {
+	width: 1.5rem;
 }
 .flex-none {
 	flex: none;
@@ -1714,6 +1763,9 @@ html {
 .gap-1 {
 	gap: 0.25rem;
 }
+.break-words {
+	overflow-wrap: break-word;
+}
 .border {
 	border-width: 1px;
 }
@@ -1729,11 +1781,17 @@ html {
 	--tw-bg-opacity: 1;
 	background-color: hsla(var(--n) / var(--tw-bg-opacity));
 }
+.stroke-current {
+	stroke: currentColor;
+}
 .p-2 {
 	padding: 0.5rem;
 }
 .p-10 {
 	padding: 2.5rem;
+}
+.p-1 {
+	padding: 0.25rem;
 }
 .py-5 {
 	padding-top: 1.25rem;
@@ -1764,6 +1822,10 @@ html {
 .text-xl {
 	font-size: 1.25rem;
 	line-height: 1.75rem;
+}
+.text-base {
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 .font-bold {
 	font-weight: 700;
@@ -2050,9 +2112,30 @@ html {
 		display: flex;
 	}
 
+	.lg\:inline-flex {
+		display: inline-flex;
+	}
+
+	.lg\:h-32 {
+		height: 8rem;
+	}
+
+	.lg\:w-32 {
+		width: 8rem;
+	}
+
+	.lg\:p-2 {
+		padding: 0.5rem;
+	}
+
 	.lg\:text-5xl {
 		font-size: 3rem;
 		line-height: 1;
+	}
+
+	.lg\:text-lg {
+		font-size: 1.125rem;
+		line-height: 1.75rem;
 	}
 }
 @media (min-width: 1280px) {
@@ -2060,6 +2143,14 @@ html {
 	.xl\:my-10 {
 		margin-top: 2.5rem;
 		margin-bottom: 2.5rem;
+	}
+
+	.xl\:h-64 {
+		height: 16rem;
+	}
+
+	.xl\:w-64 {
+		width: 16rem;
 	}
 
 	.xl\:text-5xl {

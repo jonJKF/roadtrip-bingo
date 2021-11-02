@@ -47,7 +47,7 @@
 </script>
 
 <div class="container mx-auto w-auto" style="width: 662px;">
-	<h1 class="my-1 text-xl text-primary bold text-center xl:drop-shadow-md xl:text-5xl xl:my-10">
+	<h1 class="my-1 text-2xl text-primary bold text-center xl:drop-shadow-md xl:text-5xl xl:my-10">
 		Road Trip Bingo - Have Fun!
 	</h1>
 	<div class="grid grid-cols-5 grid-rows-5 gap-1">
@@ -58,9 +58,9 @@
             align-middle
             h-32
             w-32
-            p-2
+            p-1
+            lg:p-2
             text-xl
-
             cursor-pointer
             drop-shadow-lg
             transition-colors
